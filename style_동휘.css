@@ -1,0 +1,41 @@
+a {
+    color: #fc9d37;
+}
+
+.tbl_1 {
+    width: 350px;
+    border-collapse: collapse;
+}
+
+.tbl_2 {
+    width: 500px;
+    border-collapse: collapse;
+}
+
+.tbl_3 {
+    width: 600px;
+    border-collapse: collapse;
+}
+/*선. 너비가 다 달라서 따로 함.*/
+.tbl_1 td,
+.tbl_2 td,
+.tbl_3 td {
+    text-align: center;
+}
+/*가운데 정렬*/
+.tbl_1 th,
+.tbl_2 th,
+.tbl_3 th {
+    background: #f8e4ae;
+}
+/*첫번째 행 색*/
+.tbl_1 th,
+.tbl_1 td,
+.tbl_2 th,
+.tbl_2 td,
+.tbl_3 th,
+.tbl_3 td {
+    padding: 20px, 0;
+    border: 1px solid #fcdf90;
+}
+/*높이, 선색*/
