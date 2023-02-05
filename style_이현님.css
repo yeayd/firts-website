@@ -1,0 +1,141 @@
+a {
+    color: #fc9d37;
+}
+
+* {
+    margin: 100;
+    padding: 100;
+}
+/*위에 딱 붙게 하기*/
+
+ul, li {
+    list-style: none;
+}
+/*리스트 표시 없애기*/
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/*링크 파란색 표시 없애기*/
+
+.menu_wrap .line1 {
+    font-size: 0;
+}
+/*메뉴창 잇기*/
+
+.menu_wrap .line1 > li {
+    display: inline-block;
+    width: 1000px;
+    vertical-align: top;
+    background: #f8e4ae;
+    text-align: center;
+    font-size: 16px;
+}
+/*큰 메뉴 디자인 설정*/
+
+.menu_wrap .line1 > li:hover > a {
+    background: #f8d883;
+    color: #fff;
+}
+/*큰 메뉴에 커서 올렸을 때 색 변하기*/
+
+.menu_wrap .line1 > li:hover > .line2 {
+    display: block;
+}
+/*큰 메뉴에 커서 올렸을 때 작은 메뉴 보이기*/
+
+.menu_wrap .line1 > li > a {
+    display: block;
+    padding: 300px 0;
+}
+/*큰 메뉴 블럭 크기 키우기*/
+
+.menu_wrap .line2 {
+    display: none;
+    color: #f7bd60;
+    background: #fff1c6;
+}
+/*작은 메뉴는 원래 보이지 않게 하기 & 작은메뉴 블럭 색 설정*/
+
+.menu_wrap .line2 a {
+    display: block;
+    padding: 10px 0;
+}
+/*작은 메뉴 블럭 크기 키우기*/
+
+#check-btn { display: none; }
+#check-btn:checked ~ .menubars { display: block; } 
+.menubars { display: none; }
+
+
+/*메뉴*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+body{
+    background: #e3edf7;
+}
+배경 색
+*/
+
+.accordion{
+    margin: 60px auto;
+    margin-left: 0;
+    width: 600px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #f8e4ae;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+label::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+/*하나만 선택하게 하려면 type="radio"
+여러개 선택하려면 type="checkbox"
+대신 css에서도 type 제대로 설정해줘야 함.*/
+
+.accordion .content{
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s, padding 0.2s;
+}
+
+.accordion input[type="checkbox"]:checked + label + .content{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+/*메뉴*/
